@@ -1,0 +1,54 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h3 class ="btn btn-success header" style=" color:aliceblue;" >Image Recognition</h3>
+      <br><br>
+
+      <p style="font-size: 22px; color:aliceblue;">Model is trained to identify the following objects: </p>
+   
+     <b style=" color:aliceblue;"class ="non_living_things"> 
+       STRING
+       <hr>
+       RUBIK'S CUBE
+       <hr>
+       PEN
+       <hr>
+       POUCH
+       <hr>
+      </b>
+      <label style=" color:aliceblue;">Webcam View - </label>
+      <br><br>
+       <div id="webbie"></div>
+      <br><br>
+      <div id="slacker"></div>
+      <br><br>
+      <button class="btn btn-warning" onclick="snap();">TAKE A SNAPSHOT HERE NOT ANYWHERE ESLE OR IT WON'T WORK,I KNOW IT</button>
+      <br><br>
+      <button class ="btn btn-success" onclick="compare();">PUSH THIS BUTTON TO COMPARE YOUR IMAGE TO WHATEVER THE RESULT ARE, TO FIND OUT WHICH IS THE REAL ONE OR THE FAKE ONE</button>
+      <p style="font-size: 22px; color:aliceblue;">Object :<span id="objectname"></span> </p>
+      <p style="font-size: 22px; color:aliceblue;">Accuracy :<span id="accuracy"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
